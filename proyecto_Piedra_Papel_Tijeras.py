@@ -28,7 +28,7 @@ while True:
 
     if not jugador in options:
         print('Por favor, elige una opción válida') #puedo comprobar si un elemento esta en la tupla
-        continue # exit() esta linea hace que el código no se siga ejecutando o puedo usar continue
+        continue # exit() esta linea hace que el código no se siga ejecutando o puedo usar continue para que se quede en el punto de partida.
 
     computer = random.choice(options) #en esta linea de código se esta utilizando la función random (importada anteriormente) y ejecutando la variable options que es una tupla.
 
@@ -67,11 +67,6 @@ while True:
             print("Jugador gana. Tijeras cortan papel.")
             jugador_wins += 1
             
-    '''else:
-        print("Entrada inválida. Asegúrate de elegir entre piedra, papel o tijeras.")
-
-    La linea anterior me permite mostrar al usuario cuando este ingresando una opción diferente a las tres iniciales, pero la mejor opción es usar el código de la linea 8 y 9
-    '''
 
     if computer_wins == 2:
         print(f'🎉🎉🎉El ganador es la computadora con {computer_wins} puntos !🎉🎉🎉')
